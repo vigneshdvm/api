@@ -1,0 +1,26 @@
+<h6>Welcome to Angular Projecty</h6>
+<h3>Welcome to Angular Projecty</h3>
+<h1>Welcome to Angular Projecty</h1>     
+<div style="margin:0 30px;">
+    <table>
+        <tr>
+            <th>S.no</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Id</th>
+            <th>Email Id</th>
+            <th>Avatar</th>
+        </tr>
+        <tr *ngFor="let data of newarr; index as i">
+            <td>{{i}}</td>
+            
+            <td>{{data.first_name}}</td>
+            <td>{{data.last_name}}</td>
+            <td>{{data.id}}</td>
+            <td>{{data.email}}</td>
+            <td><img src="{{data.avatar}}"></td>
+            
+        </tr>
+    </table>
+</div>
+<router-outlet></router-outlet>
